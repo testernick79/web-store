@@ -2,7 +2,7 @@
   <div id="Nav">
     <ul class="nav main-nav">
       <li class="list-item">
-        <a href="/" class="nav-link" v-bind:is="component">Home</a>
+        <router-link to="/" class="nav-link">Home</router-link>
       </li>
 
       <li class="list-item">

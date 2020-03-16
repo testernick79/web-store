@@ -1,6 +1,4 @@
 <template>
-  <!--Start of Jumbotron-->
-
   <div id="app">
     <Nav />
     <Carousel />
