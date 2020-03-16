@@ -21,14 +21,9 @@ export default new Router({
       component: Home
     },
     {
-      path: '/add-wins',
-      name: 'AddWinsForm',
-      component: lazyLoad('AddWinsForm')
-    },
-    {
-      path: '/add-player',
-      name: 'AddPlayerForm',
-      component: lazyLoad('AddPlayerForm')
+      path: '/about',
+      name: 'About',
+      component: lazyLoad('About')
     }
   ]
 })
