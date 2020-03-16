@@ -1,8 +1,28 @@
 <template>
+  <!--Start of Jumbotron-->
+
   <div id="app">
-    <router-view/>
+    <Nav />
+    <Carousel />
+
+    <div class="container my-5">
+      <router-view />
+    </div>
   </div>
 </template>
+
+<script>
+  import Nav from "./components/Navigation.vue";
+  import Carousel from "./components/Carousel.vue";
+
+  export default {
+    name: "app",
+    components: {
+      Nav,
+      Carousel
+    }
+  };
+</script>
 
 <style lang="scss">
   #app

@@ -6,17 +6,16 @@
       </li>
 
       <li class="list-item">
-        <a href="/about" class="nav-link">About</a>
         <router-link to="/about" class="nav-link">About</router-link>
       </li>
       <li class="list-item">
         <a href="htps://www.facebook.com" id="fb" class="nav-link">
-          <img src="../assets/fb.png" alt />
+          <img src="../assets/images/fb.png" alt />
         </a>
       </li>
       <li class="list-item justify-content-center">
         <a href="https://www.linkedin.com" id="ig" class="nav-link">
-          <img src="../assets/li.png" alt />
+          <img src="../assets/images/li.png" alt />
         </a>
       </li>
     </ul>
