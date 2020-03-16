@@ -2,8 +2,9 @@ import Vue from 'vue'
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Router from 'vue-router';
-
 import App from './App.vue';
+import Home from './views/Home.vue';
+import About from './views/About.vue';
 
 
 /* Vue.use( VueRouter )
@@ -14,7 +15,7 @@ const routes = [
 ] */
 
 new Vue( {
-  Router,
+  router: Router,
   el: '#app',
   render: h => h( App )
 } )

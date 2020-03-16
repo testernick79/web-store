@@ -1,12 +1,12 @@
 <template>
   <div id="Nav">
     <ul class="nav main-nav">
-      <li class="list-item">
-        <a href="/" class="nav-link" v-bind:is="component"> Home</a>
-      </li>
+      <router-link class="list-item">
+        <a href="/" class="nav-link" to="/" tag="li"> Home</a>
+      </router-link>
 
       <li class="list-item">
-        <a href="/about" class="nav-link">About</a>
+        <a href="/about" class="nav-link" to="/" tag="li">About</a>
       </li>
       <li class="list-item">
         <a href="htps://www.facebook.com" id="fb" class="nav-link">
