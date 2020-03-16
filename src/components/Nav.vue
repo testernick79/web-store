@@ -2,7 +2,7 @@
   <div id="Nav">
     <ul class="nav main-nav">
       <li class="list-item">
-        <a href="/" class="nav-link" v-bind:is="component">Home</a>
+        <a href="/" class="nav-link" v-bind:is="component"> Home</a>
       </li>
 
       <li class="list-item">

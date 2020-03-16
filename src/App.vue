@@ -4,14 +4,15 @@
   <div id="app">
     <Nav />
     <Carousel />
+    <Kids />
 
-    <div class="container my-5">
-      <Adults />
-    </div>
+    <div class="container my-5"></div>
   </div>
 </template>
 
 <script>
+import About from "./views/About";
+import Home from "./views/Home";
 import Nav from "./components/Nav.vue";
 import Carousel from "./components/Carousel.vue";
 import Hats from "./components/Hats.vue";
@@ -25,7 +26,9 @@ export default {
     Hats,
     Kids,
     Adults,
-    Carousel
+    Carousel,
+    Home,
+    About
   }
 };
 </script>

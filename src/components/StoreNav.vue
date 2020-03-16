@@ -22,7 +22,13 @@
 </template>
 
 <script>
-export default {};
+import Adults from "./Adults";
+export default {
+  name: "StoreNav",
+  components: {
+    Adults
+  }
+};
 </script>
 
 <style>
