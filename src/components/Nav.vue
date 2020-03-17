@@ -5,9 +5,9 @@
         <a href="/" class="nav-link" to="/" tag="li"> Home</a>
       </router-link>
 
-      <li class="list-item">
-        <a href="/about" class="nav-link" to="/" tag="li">About</a>
-      </li>
+      <router-link class="list-item">
+        <a href="/about" class="nav-link" to="/about" tag="li">About</a>
+      </router-link>
       <li class="list-item">
         <a href="htps://www.facebook.com" id="fb" class="nav-link">
           <img src="../assets/fb.png" alt />

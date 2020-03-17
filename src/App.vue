@@ -3,7 +3,7 @@
     <Nav />
     <Carousel />
     <div class="container my-5"></div>
-    <router-view></router-view>
+    <router-view />
   </div>
 </template>
 
@@ -27,4 +27,4 @@ export default {
   }
 };
 </script>
-<style></style>
+<style lang=""></style>
