@@ -14,7 +14,7 @@ const routes = [
 ] */
 
 new Vue( {
-  Router,
+  router: Router,
   el: '#app',
   render: h => h( App )
 } )

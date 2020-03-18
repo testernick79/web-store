@@ -1,12 +1,9 @@
 <template>
-  <!--Start of Jumbotron-->
-
   <div id="app">
     <Nav />
     <Carousel />
-    <Kids />
-
     <div class="container my-5"></div>
+    <router-view />
   </div>
 </template>
 
@@ -26,10 +23,8 @@ export default {
     Hats,
     Kids,
     Adults,
-    Carousel,
-    Home,
-    About
+    Carousel
   }
 };
 </script>
-<style></style>
+<style lang=""></style>
