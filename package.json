@@ -1,6 +1,9 @@
 {
-  "name": "pool-stats",
-  "version": "0.1.0",
+  "name": "web-store",
+  "description": "A Vue.js project",
+  "version": "1.0.0",
+  "author": "nick <123@gmail.com>",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
