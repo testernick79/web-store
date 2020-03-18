@@ -9,10 +9,8 @@
           a file you have, contct me and I can customize your order.
         </strong>
       </p>
-      <router-link>
-        <a class="btn btn-success btn-lg" href="#" role="button"
-          >Go To Our Store</a
-        >
+      <router-link to="#">
+        Go To Our Store
       </router-link>
     </div>
   </div>

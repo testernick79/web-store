@@ -1,9 +1,8 @@
 import Vue from 'vue'
-import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Router from 'vue-router';
 
-import App from './App.vue';
+import router from './router'
+
+import App from './App.vue'
 
 
 /* Vue.use( VueRouter )
@@ -14,7 +13,7 @@ const routes = [
 ] */
 
 new Vue( {
-  router: Router,
+  router: router,
   el: '#app',
   render: h => h( App )
 } )
