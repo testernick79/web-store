@@ -10,7 +10,7 @@
         </strong>
       </p>
       <router-link to="#">
-        Go To Our Store
+        <button>Go To Our Store</button>
       </router-link>
     </div>
   </div>

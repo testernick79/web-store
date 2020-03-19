@@ -1,17 +1,17 @@
 <template>
   <div id="Nav">
     <ul class="nav main-nav">
-        <router-link to="/" class="nav-link">Home</router-link>
+      <router-link to="/" class="nav-link">Home</router-link>
 
-        <router-link to="/about" class="nav-link">About</router-link>
+      <router-link to="/about" class="nav-link">About</router-link>
       <li class="list-item">
         <a href="htps://www.facebook.com" id="fb" class="nav-link">
-          <img src="../assets/fb.png" alt />
+          <img src="../assets/icons/fb.jpg" alt />
         </a>
       </li>
       <li class="list-item justify-content-center">
         <a href="https://www.linkedin.com" id="ig" class="nav-link">
-          <img src="../assets/li.png" alt />
+          <img src="../assets/icons/li.jpg" alt />
         </a>
       </li>
     </ul>
