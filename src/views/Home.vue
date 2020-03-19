@@ -10,7 +10,9 @@
         </strong>
       </p>
       <router-link to="#">
-        <button>Go To Our Store</button>
+        <button type="button" class="btn btn-primary btn-lg">
+          Go To Our Store
+        </button>
       </router-link>
     </div>
   </div>
@@ -25,6 +27,9 @@ export default {
 <style>
 h1.headingText {
   color: #04b0fc;
+}
+button.btn {
+  background-color: #04b0fc;
 }
 p.whoWeAre {
   color: #587886;
