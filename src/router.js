@@ -24,9 +24,9 @@ export default new Router( {
             component: lazyLoader( 'About' )
         },
         {
-            path: '/hats',
-            name: 'Hats',
-            component: lazyLoader( 'Hats' )
+            path: '/store',
+            name: 'Store',
+            component: lazyLoader( 'Store' )
         }
     ]
 } )

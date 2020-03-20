@@ -9,7 +9,7 @@
           a file you have, contct me and I can customize your order.
         </strong>
       </p>
-      <router-link to="#">
+      <router-link to="/Store">
         <button type="button" class="btn btn-primary btn-lg">
           Go To Our Store
         </button>
@@ -19,8 +19,10 @@
 </template>
 
 <script>
+import Store from "../views/Store";
 export default {
-  name: "Home"
+  name: "Home",
+  components: Store
 };
 </script>
 

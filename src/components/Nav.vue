@@ -19,7 +19,6 @@
 </template>
 
 <script>
-import Hats from "./Hats";
 export default {
   name: "Nav"
 };
