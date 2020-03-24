@@ -9,11 +9,18 @@
           a file you have, contct me and I can customize your order.
         </strong>
       </p>
-      <router-link to="/Store">
-        <button type="button" class="btn btn-primary btn-lg">
-          Go To Our Store
-        </button>
-      </router-link>
+
+      <button
+        v-on:click="
+          {
+            Store;
+          }
+        "
+        type="button"
+        class="btn btn-primary btn-lg"
+      >
+        Go To Our Store
+      </button>
     </div>
   </div>
 </template>

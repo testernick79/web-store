@@ -1,12 +1,12 @@
 <template>
   <div id="Store">
-    <StoreNav />
+    <store-navigation />
     <h1 class="display-4 text-center headingText">Store</h1>
   </div>
 </template>
 
 <script>
-import StoreNav from "../components/StoreNav";
+import StoreNavigation from "../components/StoreNavigation";
 export default {
   name: "Store"
 };

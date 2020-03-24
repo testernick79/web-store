@@ -27,6 +27,21 @@ export default new Router( {
             path: '/store',
             name: 'Store',
             component: lazyLoader( 'Store' )
+        },
+        {
+            path: '/hats',
+            name: 'Hats',
+            component: lazyLoader( 'Hats' )
+        },
+        {
+            path: '/kids',
+            name: 'Kids',
+            component: lazyLoader( 'Kids' )
+        },
+        {
+            path: '/adults',
+            name: 'Adults',
+            component: lazyLoader( 'Adults' )
         }
     ]
 } )

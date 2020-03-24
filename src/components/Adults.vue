@@ -1,6 +1,6 @@
 <template>
   <div id="Adults">
-    <StoreNav />
+    <StoreNavigation />
     <!--End of NAV CARD-->
 
     <!--Start of Card Body-->
@@ -34,11 +34,11 @@
 </template>
 
 <script>
-import StoreNav from "./StoreNav";
+import StoreNavigation from "./StoreNavigation";
 export default {
   name: "Adults",
   components: {
-    StoreNav
+    StoreNavigation
   },
   data() {
     return {

@@ -11,6 +11,7 @@
 import About from "./views/About";
 import Home from "./views/Home";
 import Nav from "./components/Nav.vue";
+import StoreNavigation from "./components/StoreNavigation.vue";
 import Carousel from "./components/Carousel.vue";
 import Hats from "./components/Hats.vue";
 import Kids from "./components/Kids.vue";
