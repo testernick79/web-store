@@ -10,17 +10,7 @@
         </strong>
       </p>
 
-      <button
-        v-on:click="
-          {
-            Store;
-          }
-        "
-        type="button"
-        class="btn btn-primary btn-lg"
-      >
-        Go To Our Store
-      </button>
+      <router-link to="/store" class="btn">Go To Our Store</router-link>
     </div>
   </div>
 </template>

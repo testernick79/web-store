@@ -28,7 +28,7 @@ export default {
 
 <style>
 body {
-  background-color: black;
+  background-color: white;
 }
 img {
   border-radius: 0.25rem;
