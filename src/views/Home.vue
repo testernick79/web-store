@@ -9,22 +9,26 @@
           a file you have, contct me and I can customize your order.
         </strong>
       </p>
-      <router-link to="#">
-        <button>Go To Our Store</button>
-      </router-link>
+
+      <router-link to="/store" class="btn">Go To Our Store</router-link>
     </div>
   </div>
 </template>
 
 <script>
+import Store from "../views/Store";
 export default {
-  name: "Home"
+  name: "Home",
+  components: Store
 };
 </script>
 
 <style>
 h1.headingText {
   color: #04b0fc;
+}
+button.btn {
+  background-color: #04b0fc;
 }
 p.whoWeAre {
   color: #587886;

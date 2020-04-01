@@ -1,5 +1,5 @@
 <template>
-  <div id="StoreNav">
+  <div id="StoreNavigation">
     <div class="card text-center py-5">
       <!--Start of NAV CARD
       create <storeNav />-->
@@ -7,13 +7,15 @@
       <div id="nav-store" class="card-header">
         <ul class="nav nav-pills card-header-pills">
           <li class="nav-item">
-            <a href="#" class="nav-link">Hats</a>
+            <router-link href="#" class="nav-link">Hats</router-link>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Kids</a>
+            <router-link href="#" class="nav-link">Kids</router-link>
           </li>
           <li class="nav-item">
-            <a id="active-link" href="#" class="nav-link active">Adults</a>
+            <router-link id="active-link" href="#" class="nav-link active"
+              >Adults</router-link
+            >
           </li>
         </ul>
       </div>
@@ -24,7 +26,7 @@
 <script>
 import Adults from "./Adults";
 export default {
-  name: "StoreNav",
+  name: "StoreNavigation",
   components: {
     Adults
   }
