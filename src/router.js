@@ -41,7 +41,7 @@ export default new Router( {
         {
             path: '/adults',
             name: 'Adults',
-            component: lazyLoader( 'Adults' )
+            component: lazyLoader( 'Adults ' )
         }
     ]
 } )
