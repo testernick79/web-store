@@ -7,15 +7,13 @@
       <div id="nav-store" class="card-header">
         <ul class="nav nav-pills card-header-pills">
           <li class="nav-item">
-            <router-link href="#" class="nav-link">Hats</router-link>
+            <router-link to="/hats" class="nav-link">Hats</router-link>
           </li>
           <li class="nav-item">
-            <router-link href="#" class="nav-link">Kids</router-link>
+            <router-link to="/kids" class="nav-link">Kids</router-link>
           </li>
           <li class="nav-item">
-            <router-link id="active-link" href="#" class="nav-link active"
-              >Adults</router-link
-            >
+            <router-link id="active-link" to="/adults" class="nav-link active">Adults</router-link>
           </li>
         </ul>
       </div>
@@ -24,6 +22,8 @@
 </template>
 
 <script>
+import Hats from "./Hats";
+import Kids from "./Kids";
 import Adults from "./Adults";
 export default {
   name: "StoreNavigation",
