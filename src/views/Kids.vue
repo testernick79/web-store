@@ -7,13 +7,13 @@
       <div id="nav-store" class="card-header">
         <ul class="nav nav-pills card-header-pills">
           <li class="nav-item">
-            <a to="/hats" class="nav-link">Hats</a>
+            <router-link to="/hats" class="nav-link">Hats</router-link>
           </li>
           <li class="nav-item">
-            <a id="active-link" to="/kids" class="nav-link active">Kids</a>
+            <router-link id="active-link" to="/kids" class="nav-link active">Kids</router-link>
           </li>
           <li class="nav-item">
-            <a to="/adults" class="nav-link">Adults</a>
+            <router-link to="/adults" class="nav-link">Adults</router-link>
           </li>
         </ul>
       </div>

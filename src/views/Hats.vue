@@ -6,13 +6,13 @@
       <div id="nav-store" class="card-header">
         <ul class="nav nav-pills card-header-pills">
           <li class="nav-item">
-            <a id="active-link" to="/hats" class="nav-link active">Hats</a>
+            <router-link id="active-link" to="/hats" class="nav-link active">Hats</router-link>
           </li>
           <li class="nav-item">
-            <a to="/kids" class="nav-link text-white">Kids</a>
+            <router-link to="/kids" class="nav-link text-white">Kids</router-link>
           </li>
           <li class="nav-item">
-            <a to="/adults" class="nav-link text-white">Adults</a>
+            <router-link to="/adults" class="nav-link text-white">Adults</router-link>
           </li>
         </ul>
       </div>
