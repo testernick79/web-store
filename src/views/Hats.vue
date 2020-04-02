@@ -1,46 +1,30 @@
 <template>
   <div id="Hats">
-    <div class="card text-center py-5">
-      <!--Start of NAV CARD-->
-      <h1 class="text-center heading-3 py-3">SquatchLand Store</h1>
-      <div id="nav-store" class="card-header">
-        <ul class="nav nav-pills card-header-pills">
-          <li class="nav-item">
-            <router-link id="active-link" to="/hats" class="nav-link active">Hats</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/kids" class="nav-link text-white">Kids</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/adults" class="nav-link text-white">Adults</router-link>
-          </li>
-        </ul>
-      </div>
+    <StoreNavigation />
 
-      <!--End of NAV CARD-->
+    <!--End of NAV CARD-->
 
-      <!--Start of Card Body-->
-      <div class="card-body">
-        <h3 class="text-center text-uppercase py-3">Adult Beanie & Skullcaps</h3>
-        <p class="card-text lead">Don't see what your looking for? We also offer custome work too!</p>
-        <div class="row">
-          <div class="col-md-4 text-center py-3" v-for="item in hatsAdults" :key="item">
-            <div class="card">
-              <img :src="item.image" :alt="item.name" class="card-image-top" />
-              <div class="card-body">
-                <h5 class="card-title">{{ item.name }}</h5>
-                <div class="card-text py-3">{{ item.price / 100 }}.00</div>
-                <div class="row justify-content-end">
-                  <button class="btn-block btn-danger">Add To Cart</button>
-                </div>
+    <!--Start of Card Body-->
+    <div class="card-body">
+      <h3 class="text-center text-uppercase py-3">Adult Beanie & Skullcaps</h3>
+      <p class="card-text lead">Don't see what your looking for? We also offer custome work too!</p>
+      <div class="row">
+        <div class="col-md-4 text-center py-3" v-for="item in hatsAdults" :key="item">
+          <div class="card">
+            <img :src="item.image" :alt="item.name" class="card-image-top" />
+            <div class="card-body">
+              <h5 class="card-title">{{ item.name }}</h5>
+              <div class="card-text py-3">{{ item.price / 100 }}.00</div>
+              <div class="row justify-content-end">
+                <button class="btn-block btn-danger">Add To Cart</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!--Start of CARD Body-->
     </div>
   </div>
+  <!--Start of CARD Body-->
 </template>
 
 <script>

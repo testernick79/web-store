@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import Store from "./views/Store";
 import About from "./views/About";
 import Home from "./views/Home";
 import Navigation from "./components/Navigation.vue";
