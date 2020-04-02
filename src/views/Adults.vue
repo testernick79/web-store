@@ -4,11 +4,9 @@
     <!--End of NAV CARD-->
 
     <!--Start of Card Body-->
-    <div class="card-body">
+    <div class="card-body" v-for="item in adultClothes" :key="item">
       <h3 class="text-center text-upper py-3">Adult Clothing</h3>
-      <p class="card-text lead">
-        Don't see what your looking for? We also offer custom work too!
-      </p>
+      <p class="card-text lead">Don't see what your looking for? We also offer custom work too!</p>
     </div>
 
     <!--Start of CARD Body-->

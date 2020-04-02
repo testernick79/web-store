@@ -22,9 +22,9 @@
 </template>
 
 <script>
-import Hats from "./Hats";
-import Kids from "./Kids";
-import Adults from "./Adults";
+import Hats from "../views/Hats";
+import Kids from "../views/Kids";
+import Adults from "../views/Adults";
 export default {
   name: "StoreNavigation",
   components: {
