@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import StoreNavigation from "./StoreNavigation";
+import StoreNavigation from "../components/StoreNavigation";
 export default {
   name: "Adults",
   components: {
