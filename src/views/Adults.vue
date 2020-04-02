@@ -1,35 +1,53 @@
 <template>
   <div id="Adults">
-    <StoreNavigation />
-    <!--End of NAV CARD-->
+    <div class="card text-center py-5">
+      <!--Start of NAV CARD
+      create <storeNav />-->
+      <h1 class="text-center heading-1 py-3">SquatchLand Store</h1>
+      <div id="nav-store" class="card-header">
+        <ul class="nav nav-pills card-header-pills">
+          <li class="nav-item">
+            <router-link to="/hats" class="nav-link">Hats</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="/kids" class="nav-link">Kids</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link id="active-link" to="/adults" class="nav-link">Adults</router-link>
+          </li>
+        </ul>
+      </div>
 
-    <!--Start of Card Body-->
+      <!--End of NAV CARD-->
 
-    <div class="card-body">
-      <h3 class="text-center text-upper py-3">Adult Clothing</h3>
-      <p class="card-text lead">Don't see what your looking for? We also offer custome work too!</p>
-      <div class="row">
-        <div class="col-md-4 text-center py-3" v-for="item in adultClothes" :key="item">
-          <div class="card">
-            <img :src="item.image" :alt="item.name" class="card-image-top" />
-            <div class="card-body">
-              <h5 class="card-title">{{ item.name }}</h5>
-              <div class="card-text py-3">{{ item.price / 100 }}.00</div>
-              <div class="row justify-content-end">
-                <button class="btn-block btn-danger">Add To Cart</button>
+      <!--Start of Card Body-->
+
+      <div class="card-body" v-for="item in adultClothes" :key="item">
+        <h3 class="text-center text-upper py-3">Adult Clothing</h3>
+        <p class="card-text lead">Don't see what your looking for? We also offer custome work too!</p>
+        <div class="row">
+          <div class="col-md-4 text-center py-3" v-for="item in hatsAdults" :key="item">
+            <div class="card">
+              <img :src="item.image" :alt="item.name" class="card-image-top" />
+              <div class="card-body">
+                <h5 class="card-title">{{ item.name }}</h5>
+                <div class="card-text py-3">{{ item.price / 100 }}.00</div>
+                <div class="row justify-content-end">
+                  <button class="btn-block btn-danger">Add To Cart</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <!--Start of CARD Body-->
+    <!--Start of CARD Body-->
+  </div>
 </template>
 
 <script>
-import StoreNavigation from "../components/StoreNavigation";
+import StoreNavigation from "../components/StoreNavigation.vue";
 export default {
   name: "Adults",
   components: {

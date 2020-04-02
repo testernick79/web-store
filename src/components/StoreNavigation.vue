@@ -13,7 +13,7 @@
             <router-link to="/kids" class="nav-link">Adults</router-link>
           </li>
           <li class="nav-item">
-            <router-link id="active-link" to="/adults" class="nav-link active">Kids</router-link>
+            <router-link id="active-link" to="/adults" class="nav-link">Kids</router-link>
           </li>
         </ul>
       </div>
@@ -23,8 +23,9 @@
 
 <script>
 import Hats from "../views/Hats";
-import Adults from "../views/Kids";
-import Kids from "../views/Adults";
+import Adults from "../views/Adults.vue";
+import Kids from "../views/Kids";
+
 export default {
   name: "StoreNavigation",
   components: {
