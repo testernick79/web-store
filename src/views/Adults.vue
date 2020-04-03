@@ -9,10 +9,10 @@
           <router-link to="/hats" class="nav-link">Hats</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/kids" class="nav-link">Kids</router-link>
+          <router-link id="active-link" to="/adults" class="nav-link">Adults</router-link>
         </li>
         <li class="nav-item">
-          <router-link id="active-link" to="/adults" class="nav-link">Adults</router-link>
+          <router-link to="/kids" class="nav-link">Kids</router-link>
         </li>
       </ul>
     </div>
