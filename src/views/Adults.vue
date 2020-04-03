@@ -50,7 +50,7 @@ export default {
           invId: 2,
           name: "Adult Long Sleeve",
           image:
-            "https://secure17.syncusercontentpro.com/mfs-60:e570977b877a5878ca3e7183ed9a8c34=============================/p/Adult%20long%20sleeve.jpg?allowdd=0&datakey=UG2/mQvrPv6hmAErt72HmPnUZJSgVefWrot+7o7E4HEulpoKtcQvMMOVFiPUZKIByLSc1Cu3ZDsfGAzGZu4bSQqLCdK3eYdxvYZeS38Y9MBGAFr+Tpx9GuJs5zR2Jtdqua3Q14yKtFEKOiCY+6irvK9rILgR0iBQ8X1WiMXva2VOgJAJlkX+Z0ekRGkm1fENYTE9Dpxts+NMrNZd+fcrDj5LjLbX6TQGLRT+bf9GZMPvB0wC6cQiASGEz6elNYEAtuGNKe3y2Q5Cvk7NbQ1yeqybh1b6zZaSwvsbOj1Ln87TYGiYHiym1EyFT1Wn4KkgKg1uu5JTASxJIxXEOGo7dg&engine=ln-3.1.31&errurl=KxXZKxyl521S/TAmWmrkW2Hos5shWqX+wult5Hwj/IiZI94q7imNiCnBvYNesMDPHlt4wYO7H81xmr4HaN5AuK3Rscw07x5/RGYk669Ww2sc5IJam6OaUBmAFCQa2p67mx1SF3bSF1foHn9y4EKWNIlVvELPySTmvXN+WePkyr9KUmPBgMXTMBhXeNVc42dZgVmM7MXFiY0W3qgP2T44/CLQtyGBEaprps71DjZyRve38HUtSnzE8igq7Po8HMQpxTZSz+/SIV2QjrVw6AObpMuBwXAYn3NOf6pUK2kCpO4rTsytahPD4VOtYk7zlTqJdaRyw+g+ZoWFG0MEALfXqQ==&header1=Q29udGVudC1UeXBlOiBpbWFnZS9qcGVn&header2=Q29udGVudC1EaXNwb3NpdGlvbjogaW5saW5lOyBmaWxlbmFtZT0iQWR1bHQlMjBsb25nJTIwc2xlZXZlLmpwZyI7ZmlsZW5hbWUqPVVURi04JydBZHVsdCUyMGxvbmclMjBzbGVldmUuanBnOw&ipaddress=519ca1d8cc62eda7c1f3780a705ce710861ca01f&linkcachekey=06d51ddc0&linkoid=544230002&mode=100&sharelink_id=8358362470002&timestamp=1584154591752&uagent=a69db06b0c9198316d0e9b37b5efcf1d13a6269e&signature=81e520886de7f261eca32454bf50a77a5276d1e9&cachekey=60:e570977b877a5878ca3e7183ed9a8c34=============================",
+            require('../assets/Adult/adult-long-sleeve.jpg'),
           price: 2000
         },
         {
