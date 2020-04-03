@@ -22,31 +22,24 @@
     <!--Start of Card Body-->
     <div class="card-body">
       <h3 class="text-center text-uppercase py-3">Kids Clothing</h3>
-      <p
-        class="card-text text-center lead"
-      >Don't see what your looking for? We also offer custome work too!</p>
-      <div class="row">
-        <div class="col-md-4 text-center py-3" v-for="item in kidsClothes" :key="item.kids">
-          <div class="card">
-            <img :src="item.image" :alt="item.name" class="card-image-top" />
-            <div class="card-body">
-              <h5 class="card-title">{{ item.name }}</h5>
-              <div class="card-text py-3">{{ item.price / 100 }}.00</div>
-              <div class="row justify-content-end">
-                <button class="btn-block btn-danger">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <p class="card-text text-center lead">Don't see what your looking for? We also offer custome work too!</p>
+      <!--Start of CARD Body-->
+      <card-body :items="kidsClothes">
+        <template scope="{ kidItem }">
+        </template>
+      </card-body>
     </div>
     <!--Start of CARD Body-->
   </div>
 </template>
 
 <script>
+  import CardBody from "../components/cards/CardBody";
 export default {
-  name: "Kids",
+    name: "Kids",
+    components: {
+      CardBody
+    },
   data() {
     return {
       kidsClothes: [

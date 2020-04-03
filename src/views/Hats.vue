@@ -22,31 +22,24 @@
     <!--Start of Card Body-->
     <div class="card-body">
       <h3 class="text-center text-uppercase py-3">Adult Beanie & Skullcaps</h3>
-      <p
-        class="text-center card-text lead"
-      >Don't see what your looking for? We also offer custome work too!</p>
-      <div class="row">
-        <div class="col-md-4 text-center py-3" v-for="item in hatsAdults" :key="item.hats">
-          <div class="card">
-            <img :src="item.image" :alt="item.name" class="card-image-top" />
-            <div class="card-body">
-              <h5 class="card-title">{{ item.name }}</h5>
-              <div class="card-text py-3">{{ item.price / 100 }}.00</div>
-              <div class="row justify-content-end">
-                <button class="btn-block btn-danger">Add To Cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <p class="text-center card-text lead">Don't see what your looking for? We also offer custome work too!</p>
+      <!--Start of CARD Body-->
+      <card-body :items="hatsAdults">
+        <template scope="{ hatItem }">
+        </template>
+      </card-body>
     </div>
   </div>
   <!--Start of CARD Body-->
 </template>
 
 <script>
+  import CardBody from "../components/cards/CardBody";
 export default {
-  name: "Hats",
+    name: "Hats",
+    components: {
+      CardBody
+    },
   data() {
     return {
       hatsAdults: [
