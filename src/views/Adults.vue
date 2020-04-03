@@ -2,7 +2,6 @@
   <div id="Adults">
     <!--Start of NAV CARD
     create <storeNav />-->
-    <h1 class="text-center heading-1 py-3">SquatchLand Store</h1>
     <div id="nav-store" class="card-header">
       <ul class="nav nav-pills card-header-pills">
         <li class="nav-item">
@@ -19,14 +18,12 @@
 
     <!--End of NAV CARD-->
 
-      <!--Start of CARD Body-->
-      <card-body :items="adultClothes" :title="title">
-        <template scope="{ title }">
-        </template>
-      </card-body>
+    <!--Start of CARD Body-->
+    <card-body :items="adultClothes" :title="title">
+      <template scope="{ adultItem }">
+      </template>
+    </card-body>
   </div>
-
-  <!--Start of CARD Body-->
 </template>
 
 <script>
