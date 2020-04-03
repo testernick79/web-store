@@ -16,10 +16,8 @@
 </template>
 
 <script>
-import Store from "../views/Store";
 export default {
-  name: "Home",
-  components: Store
+  name: "Home"
 };
 </script>
 

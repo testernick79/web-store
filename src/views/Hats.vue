@@ -1,47 +1,47 @@
 <template>
   <div id="Hats">
-    <div class="card text-center py-5">
-      <!--Start of NAV CARD
-      create <storeNav />-->
-      <h1 class="text-center heading-1 py-3">SquatchLand Store</h1>
-      <div id="nav-store" class="card-header">
-        <ul class="nav nav-pills card-header-pills">
-          <li class="nav-item">
-            <router-link id="active-link" to="/hats" class="nav-link">Hats</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/kids" class="nav-link">Kids</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/adults" class="nav-link">Adults</router-link>
-          </li>
-        </ul>
-      </div>
+    <!--Start of NAV CARD
+    create <storeNav />-->
+    <h1 class="text-center heading-1 py-3">SquatchLand Store</h1>
+    <div id="nav-store" class="card-header">
+      <ul class="nav nav-pills card-header-pills">
+        <li class="nav-item">
+          <router-link id="active-link" to="/hats" class="nav-link">Hats</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/kids" class="nav-link">Kids</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/adults" class="nav-link">Adults</router-link>
+        </li>
+      </ul>
+    </div>
 
-      <!--End of NAV CARD-->
+    <!--End of NAV CARD-->
 
-      <!--Start of Card Body-->
-      <div class="card-body">
-        <h3 class="text-center text-uppercase py-3">Adult Beanie & Skullcaps</h3>
-        <p class="card-text lead">Don't see what your looking for? We also offer custome work too!</p>
-        <div class="row">
-          <div class="col-md-4 text-center py-3" v-for="item in hatsAdults" :key="item">
-            <div class="card">
-              <img :src="item.image" :alt="item.name" class="card-image-top" />
-              <div class="card-body">
-                <h5 class="card-title">{{ item.name }}</h5>
-                <div class="card-text py-3">{{ item.price / 100 }}.00</div>
-                <div class="row justify-content-end">
-                  <button class="btn-block btn-danger">Add To Cart</button>
-                </div>
+    <!--Start of Card Body-->
+    <div class="card-body">
+      <h3 class="text-center text-uppercase py-3">Adult Beanie & Skullcaps</h3>
+      <p
+        class="text-center card-text lead"
+      >Don't see what your looking for? We also offer custome work too!</p>
+      <div class="row">
+        <div class="col-md-4 text-center py-3" v-for="item in hatsAdults" :key="item.hats">
+          <div class="card">
+            <img :src="item.image" :alt="item.name" class="card-image-top" />
+            <div class="card-body">
+              <h5 class="card-title">{{ item.name }}</h5>
+              <div class="card-text py-3">{{ item.price / 100 }}.00</div>
+              <div class="row justify-content-end">
+                <button class="btn-block btn-danger">Add To Cart</button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!--Start of CARD Body-->
   </div>
+  <!--Start of CARD Body-->
 </template>
 
 <script>
@@ -107,7 +107,7 @@ export default {
           price: 999999
         },
         {
-          invId: 8,
+          invId: 9,
           name: "Placeholder",
           image:
             "https://secure17.syncusercontentpro.com/mfs-60:a62e55cab8ffc32df68d809d75fc121c=============================/p/placeholder.jpg?allowdd=0&datakey=QmzGlaxblVNUcZefA/okg56ef0Zu88MIsGl8VAdE3ZNiYVngDVeESz6axW4FgsP0cmAkaprDb1kWhLKxiHZhb1oHUwwW3KLINRvZJp6V09wouEYWX+rXxeNvhuB0fNMU64a/isuar8wQwUhLsA6tX/EHGpHxRXIUdPxWIVS44kqlWEsGlvWqtukMKpDts3TqFZxIklhCklrgJM9OPwaiEyrdHbPJs2QAXSVuNJvkP3qrjBTOu1RHrhy1K03s9LyA8vvDb01HrqsTKgritgXFl4P5wnTqTl01uqIt6aKUIPGmibxKCtPSU2GN9xklNP1mqJ5/8kLX/xQLeKOe3rf5zA&engine=ln-3.1.31&errurl=WmnLq0BYQjpUgdc4vFol1a6ajbjTW6q0IvDZttUV9jXuDFWDh0zPz4VNjtTcG31BJlcVZENG1tNhjArLy8nkVIz4nagi0pII2dt9s8+XGqAbUj4FELKMSjAIrZlrtSe45DpbZUYt0JFN6D9s2yQSQ5yI+zN+S9kfF/dfvtsLkC94/4iW+hYhDW/eHKOXuqDnNdjTdaHyWPoN1YBBi6ziTVo/deFHuhAhvPivec61InKqrw0FEtqflNfMEodTXxNK7tnr5N1fLTc6O4P5nT5egtQolzweDuF1QXZiRkj5253pn6/UryELb6FFLxxZB9noXDFzsah56cdQjEfU14QVMA==&header1=Q29udGVudC1UeXBlOiBpbWFnZS9qcGVn&header2=Q29udGVudC1EaXNwb3NpdGlvbjogaW5saW5lOyBmaWxlbmFtZT0icGxhY2Vob2xkZXIuanBnIjtmaWxlbmFtZSo9VVRGLTgnJ3BsYWNlaG9sZGVyLmpwZzs&ipaddress=519ca1d8cc62eda7c1f3780a705ce710861ca01f&linkcachekey=507e482c0&linkoid=544230002&mode=100&sharelink_id=8358466760002&timestamp=1584219812560&uagent=a69db06b0c9198316d0e9b37b5efcf1d13a6269e&signature=f4072a9b5703b5c0c927f02e19ec194c0acc4533&cachekey=60:a62e55cab8ffc32df68d809d75fc121c=============================",
