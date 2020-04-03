@@ -6,7 +6,7 @@
     <div id="nav-store" class="card-header">
       <ul class="nav nav-pills card-header-pills">
         <li class="nav-item">
-          <router-link to="/hats" class="nav-link"></router-link>
+          <router-link to="/hats" class="nav-link">hats</router-link>
         </li>
         <li class="nav-item">
           <router-link to="/adults" class="nav-link">Adults</router-link>
