@@ -18,17 +18,12 @@
     </div>
 
     <!--End of NAV CARD-->
-
-    <!--Start of Card Body-->
-    <div class="card-body">
-      <h3 class="text-center text-uppercase py-3">Adult Beanie & Skullcaps</h3>
-      <p class="text-center card-text lead">Don't see what your looking for? We also offer custome work too!</p>
+    
       <!--Start of CARD Body-->
-      <card-body :items="hatsAdults">
+      <card-body :items="hatsAdults" :title="title">
         <template scope="{ hatItem }">
         </template>
       </card-body>
-    </div>
   </div>
   <!--Start of CARD Body-->
 </template>
@@ -42,6 +37,7 @@ export default {
     },
   data() {
     return {
+      title: "Adult Beanie & Skullcaps",
       hatsAdults: [
         {
           invId: 1,

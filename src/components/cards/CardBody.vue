@@ -1,20 +1,24 @@
 <template>
-  <div class="row">
-    <div class="col-md-4 text-center py-3"
-         v-for="item in items"
-         :key="item.invId">
-      <slot v-bind="item">
-        <div class="card">
-          <img :src="item.image" :alt="item.name" class="card-image-top" />
-          <div class="card-body">
-            <h5 class="card-title">{{ item.name }}</h5>
-            <div class="card-text py-3">{{ item.price / 100 }}.00</div>
-            <div class="row justify-content-end">
-              <button class="btn-block btn-danger">Add To Cart slot</button>
+  <div class="card-body">
+    <h3 class="text-center text-uppercase py-3">{{ title }}</h3>
+    <p class="text-center card-text lead">Don't see what your looking for? We also offer custome work too!</p>
+    <div class="row">
+      <div class="col-md-4 text-center py-3"
+           v-for="item in items"
+           :key="item.invId">
+        <slot v-bind="item">
+          <div class="card">
+            <img :src="item.image" :alt="item.name" class="card-image-top" />
+            <div class="card-body">
+              <h5 class="card-title">{{ item.name }}</h5>
+              <div class="card-text py-3">{{ item.price / 100 }}.00</div>
+              <div class="row justify-content-end">
+                <button class="btn-block btn-danger">Add To Cart slot</button>
+              </div>
             </div>
           </div>
-        </div>
-      </slot>
+        </slot>
+      </div>
     </div>
   </div>
 </template>
@@ -22,6 +26,10 @@
 <script>
   export default {
     props: {
+      title: {
+        type: String,
+        default: ""
+      },
       items: {
         type: Array,
         default: () => {}

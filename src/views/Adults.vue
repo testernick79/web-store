@@ -19,17 +19,11 @@
 
     <!--End of NAV CARD-->
 
-    <!--Start of Card Body-->
-
-    <div class="card-body">
-      <h3 class="text-center text-uppercase py-3">Adult Clothing</h3>
-      <p class="card-text text-center lead">Don't see what your looking for? We also offer custome work too!</p>
       <!--Start of CARD Body-->
-      <card-body :items="adultClothes">
-        <template scope="{ adultItem }">
+      <card-body :items="adultClothes" :title="title">
+        <template scope="{ title }">
         </template>
       </card-body>
-    </div>
   </div>
 
   <!--Start of CARD Body-->
@@ -46,6 +40,7 @@ export default {
   },
   data() {
     return {
+      title: "Adult Clothing",
       adultClothes: [
         {
           invId: 1,

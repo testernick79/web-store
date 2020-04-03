@@ -19,16 +19,11 @@
 
     <!--End of NAV CARD-->
 
-    <!--Start of Card Body-->
-    <div class="card-body">
-      <h3 class="text-center text-uppercase py-3">Kids Clothing</h3>
-      <p class="card-text text-center lead">Don't see what your looking for? We also offer custome work too!</p>
       <!--Start of CARD Body-->
-      <card-body :items="kidsClothes">
+      <card-body :items="kidsClothes" :title="title">
         <template scope="{ kidItem }">
         </template>
       </card-body>
-    </div>
     <!--Start of CARD Body-->
   </div>
 </template>
@@ -42,6 +37,7 @@ export default {
     },
   data() {
     return {
+      title: "Kids Clothing",
       kidsClothes: [
         {
           invId: 1,
